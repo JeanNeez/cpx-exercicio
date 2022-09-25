@@ -247,7 +247,7 @@ function vC.missionFourthStep()
     end
 end
 -----------------------------------------------------------------------------------------------------------------------------------------
--- EVENTOS
+-- EVENTOS DO HOST DA MISSÃO
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterNetEvent("cpx-exercicio:manageAgressivePeds")
 AddEventHandler("cpx-exercicio:manageAgressivePeds",function(tbl)
@@ -295,7 +295,9 @@ AddEventHandler("cpx-exercicio:finishMission",function(abort)
     enemysReady = false
     textInScreen = false
 end)
-
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- EVENTOS DOS DEMAIS PLAYERS
+-----------------------------------------------------------------------------------------------------------------------------------------
 RegisterNetEvent("cpx-exercicio:missionStarted")
 AddEventHandler("cpx-exercicio:missionStarted",function(mission)
     if not inMission or inMission ~= mission then
